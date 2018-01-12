@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Merriweather+Sans|Quicksand|Roboto|Viga" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 750, function(){
+           window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+  </head>
+  <body>
+    
+<!-- nav bar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header"> 
+        <a type="button" class="navbar-toggle navbar-menu" data-toggle="collapse" data-target="#mainNav" id="navbarCollapseButton">
+          <span class="icon-bar menu-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>  
+        <a class="navbar-brand" href="#home" style="color: white; font-family: 'Raleway'; font-size:25px;"><b>OneBook</b></a>
+      </div>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <div class="nav navbar-nav navbar-right">
+          <li><a href="#aboutUs" style="color: white; font-family: 'Raleway'; font-size:25px;"><b>About Us</b></a></li>
+          <li><a href="#information" style="color: white; font-family: 'Raleway'; font-size:25px;"><b>Meet the Team</b></a></li>
+          <li><a href="#progress" style="color: white; font-family: 'Raleway'; font-size:25px;"><b>Progress</b></a></li>
+          <li><a href="#donate" style="color: white; font-family: 'Raleway'; font-size:25px;"><b>Get Involved</b></a></li>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!--big image-->
+  <div id="home" class="container-fluid text-center bg-home">
+    <div class="bg-home-text">
+      <h1 class="title"><b>OneBook</b></h1>
+      <h3 class="subtitle"><b>A team dedicated to spreading literacy in the developing world</b></h3>
+    </div>
+  </div>
+
+
+<div class="container-fluid bg-team " id="aboutUs">
+  <h1 class="text-center" style="font-family: Raleway; color:black;">About Us</h1>
+  <div class="bg-information-text text-center" style="font-family: Raleway">
+        <p>Here at OneBook, we're committed to spreading English literacy and cultural awareness throughout the developing world. Our team of dedicated high-schoolers and education members organize efforts to provide schools abroad with good reading material to supplement their English language curriculum. Childrens' books collected are also able to give young students an authentic taste of culture through primary sources that is not experiencable via other means.</p>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="nickModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title text-center" id="exampleModalLabel">Nick Marcenelle</h3>
+                <h5 class="modal-title text-center" id="exampleModalLabel">Co-Founder & VP</h5>
+
+             
+            </div>
+            <div class="modal-body">
+                One of our founding members, Nick Marcenelle is one of our veterans.  He brings a breadth of insight and technical knowledge to the team and is an integral part of our staff.            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- general information -->
+  <div class="container-fluid color-blue" id="information">
+     <h1 class="text-center" style="font-family: 'Raleway'"><b>Meet the Team</b></h1>
+
+    <div class="row padded">
+      <div class="col-sm-4 bg-information-text text-center">
+        <img class="smaller-image grow" src="http://nymag.com/daily/entertainment/2009/01/06/images/20090106_aziz_190x190.jpg" alt="There should be a picture here">
+        <h3><b>Shudipto Wahed</b></h3>
+      </div>
+      <div class="col-sm-4 bg-information-text text-center">
+        <img type="button" data-toggle="modal" data-target="#nickModal" class="smaller-image grow" src="https://deltaskelta.github.io/react-awesome-resume-demo/erlich-bachman.jpg" alt="Should be a picture">
+        <h3><b>Nick Marcenelle</b></h3>
+      </div>
+
+      <div class="col-sm-4 bg-information-text text-center">
+        <img class="smaller-image grow" src="https://carolinainsurance.com/wp-content/uploads/sites/18/2015/02/business-man-300x300.png" alt="A cute orange cat lying on its back. ">
+        <h3><b>Aaron Miller</b></h3>
+      </div>
+       
+      </div>
+    </div>
+  </div>
+
+<div class="container-fluid bg-progress " id="progress">
+  <h1 class="text-center" style="font-family: Raleway; color:white;">Our Impact <b>Since 2017</b></h1>
+  <div class="row">
+    
+    <div class="col-sm-6 text-center" style="color:white">
+      <h1 style="font-family: Viga; font-size: 100px; padding-top: 25px;"><b>1,150</b></h1>
+      <h3><b>Books Collected</b></h3>
+    </div>
+    <div class="col-sm-6 text-center" style="color:white">
+      <h1 style="font-family: Viga; font-size: 100px; padding-top: 25px;"><b>12,587</b></h1>
+      <h3><b>Children Reached</b></h3>
+  
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid bg-donate " id="donate">
+  <h1 class="text-center" style="font-family: Raleway; color:black;"><b>Get Involved</b></h1>
+  <div class="row">
+    
+    <div class="col-sm-6 text-center" style="color:black">
+      <h1 style="font-family: Raleway; font-size: 50px; padding-top: 25px; padding-bottom: 25px;"><b>Donate</b></h1>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>    </div>
+    <div class="col-sm-6 text-center" style="color:black">
+      <h1 style="font-family: Raleway; font-size: 50px; padding-top: 25px; padding-bottom: 25px;"><b>Host a Drive</b></h1>
+    
+<form class="form-inline">
+  <div class="form-group mx-sm-3">
+    <input type="email" class="form-control" id="email" placeholder="Email" style="margin-right: 20px;">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+    </div>
+  </div>
+</div>
+
+
+  <footer class="container-fluid bg-footer bg-footer-text" style="font-family: Raleway">
+    <p>
+      ©2018 OneBook. All rights reserved. Site developed by Nick Marcenelle Perez.&nbsp;&nbsp;
+    </p>
+  </footer>
+
+  
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
